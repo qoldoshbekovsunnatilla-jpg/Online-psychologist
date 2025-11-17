@@ -1,0 +1,804 @@
+.ota{
+width: 100%;
+height: 820px;
+background-color: #F9FCFF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    padding: 20px 60px;
+    background: #f8fbff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 42px;
+}
+
+.nav {
+    display: flex;
+    gap: 55px;
+
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #4a4a4a;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #6f6bea; 
+}
+
+.btn {
+    padding: 10px 25px;
+    border: 2px solid #6f6bea;
+    border-radius: 10px;
+    color: #6f6bea;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6f6bea;
+    color: white;
+}
+
+
+
+.qilamizh1{
+    width: 640px;
+height: 57px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 44px;
+line-height: 130%;
+letter-spacing: 2%;
+color: #7872B9;
+
+}
+.qilamizp{
+    width: 420px;
+height: 112px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 40px;
+line-height: 140%;
+letter-spacing: 2%;
+color: #4D4D52;
+
+}
+.btnqilamiz{
+width: 310px;
+height: 70px;
+opacity: 1;
+border-radius: 15px;
+background-color: #7872B9;
+color: white;
+margin-top: 50px;
+font-family: Montserrat;
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 2%;
+text-align: center;
+box-shadow:
+    10px 20px 0 #CDE1FF,
+    0 20px 50px #CDE1FF;
+}
+
+.menuts{
+width: 380px;
+
+opacity: 1;
+font-family: Montserrat;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 2%;
+text-decoration: none;
+color: #424257;
+margin-left: 10px;
+
+}
+.support{
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+
+
+  .support {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .support-panel {
+    margin-top: 8px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    width: 260px;
+    opacity: 0;
+    transform: translateY(8px);
+    pointer-events: none;
+    transition: opacity 180ms ease, transform 180ms ease;
+  }
+
+  .support-panel.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .support-panel input {
+    width: calc(100% - 12px);
+    padding: 6px;
+    margin-bottom: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .support-panel button {
+    width: 100%;
+    padding: 6px;
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Kommentlar panel ichida, yopilganda avtomatik ko'rinmaydi */
+  .comments {
+    margin-top: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 160px;
+    overflow-y: auto;
+  }
+
+  .comments li {
+    background: #f1f1f1;
+    margin-top: 6px;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+
+
+
+
+  .psxtrator{
+    width: 100%;
+    height:592px;
+    
+  }
+  .ps{
+    width: 1180px;
+height: 52px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 40px;
+line-height: 130%;
+letter-spacing: 2%;
+text-align: center;
+color: #7872B9;
+margin: auto;
+  }
+
+  .vrmna{
+    width: 100%;
+height: 607px;
+opacity: 1;
+background-color: #F9FCFF;
+position: relative;
+  }
+
+.tags {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow: hidden;
+}
+
+.line {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.loop {
+  display: inline-flex;
+  gap: 14px;
+  animation: scrollLoop 12s linear infinite;
+}
+
+/* 2-qator biroz sekinroq */
+.loop2 {
+  animation-duration: 16s;
+}
+
+.tag {
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: 2px solid #7A6BD4;
+  font-size: 16px;
+  color: #4A3FA8;
+  background: transparent;
+}
+
+.tag.filled {
+  background: #7A6BD4;
+  color: white;
+  border-color: #7A6BD4;
+}
+
+/* 
+  0–25% → joyida turadi
+  25–100% → chapga sekin suriladi
+  -50% † — bo‘sh joy chiqmasligi uchun
+*/
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0); /* avval turib turadi */
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.p8{
+    width: 1180px;
+height: 34px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+line-height: 140%;
+letter-spacing: 1%;
+text-align: center;
+color: #4D4D52;
+margin: auto;
+}
+.p9{
+    width: 1180px;
+height: 52px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 40px;
+line-height: 130%;
+letter-spacing: 2%;
+text-align: center;
+color: #7872B9;
+margin: auto;
+}
+.p10{
+    width: 578px;
+height: 56px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 1%;
+text-align: center;
+color: #4D4D52;
+margin: auto;
+padding-bottom: 80px;
+
+}
+               
+.belgi{
+    width: 117.00001121811749px;
+height: 116.99999595932796px;
+opacity: 1;
+position: absolute;
+top: 160px;
+left: 1000px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rabotem{
+    width: 100%;
+height: 700px;
+opacity: 1;
+
+}
+.p1{
+    width: 292px;
+height: 34px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+line-height: 140%;
+letter-spacing: 1%;
+
+}
+.p2{
+    width: 1080px;
+height: 104px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 40px;
+line-height: 130%;
+letter-spacing: 2%;
+color: #7872B9;
+}
+.p3{
+    width: 780px;
+height: 56px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 1%;
+color: #4D4D52;
+padding-top: 30px;
+}
+.education-card {
+  background: #eaf4ff;  /* rasmga o‘xshagan och ko‘k fon */
+  border-radius: 22px;
+}
+
+
+
+
+
+
+
+
+
+.sdale{
+    width: 100%;
+height: 1893px;
+opacity: 1;
+background-color: #F9FCFF;
+
+}
+.s1{
+    width: 1180px;
+height: 52px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 40px;
+line-height: 130%;
+letter-spacing: 2%;
+text-align: center;
+color: #7872B9;
+margin: auto;
+}
+.btnf{
+    width: 410px;
+height: 70px;
+opacity: 1;
+border-radius: 15px;
+background-color: #7872B9;
+color: white;
+font-family: Montserrat;
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 2%;
+text-align: center;
+margin-top: 30px;
+box-shadow:
+    10px 20px 0 #CDE1FF,
+    0 20px 50px #CDE1FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vapros{
+    width: 100%;
+    height: 1008px;
+
+}
+.s2{
+  width: 1180px;
+height: 52px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 40px;
+line-height: 130%;
+letter-spacing: 2%;
+text-align: center;
+color: #7872B9;
+margin: auto;
+padding-bottom: 100px
+;
+}
+
+
+
+/* SNTech accordion uslubi */
+.sntech-accordion .accordion-button {
+  position: relative;
+  padding-right: 3rem;
+  background-color: #eaf6ff;
+  color: #0b3b57;
+  font-weight: 600;
+  box-shadow: none;
+  border-radius: 8px;
+  height: 100px;
+}
+
+/* Bootstrap default ikonkasini o‘chiramiz */
+.sntech-accordion .accordion-button::after {
+  display: none;
+}
+
+/* Custom ikonka joyi */
+.sntech-accordion .accordion-button::before {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Collapsed holat — PLUS belgisi */
+.sntech-accordion .accordion-button.collapsed::before {
+  background-image: url("img/plus\ \(1\).png"); /* sizning plus rasm yo‘li */
+}
+
+/* Expanded holat — MINUS belgisi */
+.sntech-accordion .accordion-button:not(.collapsed)::before {
+  background-image: url("img/plus.png");
+
+}
+
+/* Accordion body uslubi */
+.sntech-accordion .accordion-body {
+  background-color: #ffffff;
+  color: #1b1b1b;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #d0e6f7;
+  
+}
+
+/* Accordion item oraliqlari */
+.sntech-accordion .accordion-item {
+  border: none;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.youmi{
+    width: 100%;
+height: 907px;
+background-color: #F9FCFF;
+}
+.y1{
+  width: 680px;
+height: 104px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 40px;
+line-height: 130%;
+letter-spacing: 2%;
+color: #7872B9;
+}
+.y2{
+  width: 580px;
+height: 56px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 1%;
+color: #4D4D52;
+padding-top: 40px;
+
+}
+.sntech-checkline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+ font-family: Montserrat;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 140%;
+letter-spacing: 1%;
+
+  color: #4D4D52;
+  padding: 8px 12px;
+
+}
+
+.sntech-check-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+.btmd{
+  width: 380px;
+height: 70px;
+opacity: 1;
+border-radius: 15px;
+background-color: #7872B9;
+color: white;
+margin: auto;
+box-shadow:
+    10px 20px 0 #CDE1FF,
+    0 20px 50px #CDE1FF;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.extraml{
+  width: 100%;
+height: 680px;
+opacity: 1;
+border-radius: 25px;
+background-color: #F9FCFF;
+}
+.e1{
+  width: 780px;
+height: 52px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 800;
+font-style: ExtraBold;
+font-size: 40px;
+line-height: 130%;
+letter-spacing: 2%;
+color: #7872B9;
+}
+.e2{
+width: 780px;
+height: 84px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 1%;
+color: #4D4D52;
+}
+.namber{
+  width: 380px;
+height: 34px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+line-height: 140%;
+letter-spacing: 1%;
+color: #4D4D52;
+}
+.e3{
+  width: 450px;
+height: 56px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 1%;
+color: #4D4D52;
+}
+
+
+
+
+
+
+:root{
+  --text: #6e6a7f;
+  --accent: #7a6cd9;
+  --icon-bg: #e8e1f7;
+  --bg: #f8f9fd;
+}
+
+.youmi-footer{
+  background: var(--bg);
+  padding: 55px 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Brand */
+.youmi-brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:25px;
+}
+
+.youmi-brand img{
+  height:44px;
+  width:auto;
+}
+
+.youmi-brand span{
+  font-size:28px;
+  font-weight:700;
+  color:var(--accent);
+}
+
+/* Titles */
+.youmi-mini-title{
+  font-size:15px;
+  color:var(--text);
+  margin-bottom:3px;
+}
+
+/* Accent links */
+.youmi-accent{
+  color:var(--accent);
+  font-size:17px;
+  text-decoration:none;
+}
+.youmi-accent:hover{
+  text-decoration:underline;
+}
+
+/* Social icons */
+.youmi-social a{
+  width:42px;
+  height:42px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:var(--icon-bg);
+  color:var(--accent);
+  margin-right:12px;
+  font-size:20px;
+  text-decoration:none;
+}
+
+/* Link list */
+.youmi-link{
+  display:block;
+ font-family: Montserrat;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+line-height: 140%;
+letter-spacing: 1%;
+color: #7872B9;
+  margin:10px 0;
+  text-decoration:none;
+}
+.youmi-link:hover{
+  color:var(--accent);
+  text-decoration:underline;
+}
+
+/* Legal links */
+.youmi-legal a{
+  display:block;
+  margin:10px 0;
+  font-size:17px;
+  color:var(--text);
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.youmi-legal a:hover{
+  color:var(--accent);
+}
+.youmi-footer .row > div {
+  min-height: 160px; /* barcha ustunlar balandligi bir xil bo‘ladi */
+}
+.youmi-brand{
+  margin-bottom: 10px;  /* yuqoridagi bo‘shliqni kamaytirdim */
+}
+
+.youmi-social{
+  margin-top: 15px;
+}
